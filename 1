@@ -1,0 +1,7 @@
+defile file_create(){
+  file {'/root/hello.txt':
+    content => 'hello',
+    owner   => 'root',
+    mode    => '0755'
+  }
+}

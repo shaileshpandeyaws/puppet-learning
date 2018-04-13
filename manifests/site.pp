@@ -5,7 +5,9 @@ node default {
   #   class { 'my_class': }
   notify{'hello': }
   notify{'Hi': }
-  notify{'Howdy': }
+  notify{hiera('message'): }
 
   include git
+
+  git::file_create {'create_file': }
 }
