@@ -1,26 +1,17 @@
 
 
 
+node 'client2' {
+notify {'matched fqdn client2': }
+}
+
 node 'client2.puppet' {
-notify {'matched fqdn': }
+notify {'matched fqdn client2.puppet': }
 }
 
-node /^client2/ {
-notify {'matched client.puppet': }
+node 'client2.puppet.com' {
+notify {'matched fqdn full': }
 }
-
-
-
-node /^clien/ {
-notify {'matched client.puppet.com': }
-}
-
-
-node /^client/ {
-notify {'matched client2 ': }
-}
-
-
 
 node default {
 
