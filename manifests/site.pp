@@ -4,7 +4,6 @@ node default {
   notify{'Hi': }
   notify{hiera('message'): }
 
-#  include git
-
-#  git::file_create {'create_file': }
+  hiera_include('classes')
+ 
 }

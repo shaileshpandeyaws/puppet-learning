@@ -1,3 +1,7 @@
 message: 'hello hiera'
 today: 'is moonday'
+classes:
+ - git::notice 
+ - git::msg
+ - git::file_create
 
