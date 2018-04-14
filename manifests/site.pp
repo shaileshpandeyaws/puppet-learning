@@ -1,4 +1,7 @@
 
+node 'client2.puppet.com' {
+notify {'matched client2 ': }
+}
 
 
 
@@ -14,6 +17,8 @@ notify {'matched client.puppet.com': }
 node /^client/ {
 notify {'matched client2 ': }
 }
+
+
 
 node default {
 
