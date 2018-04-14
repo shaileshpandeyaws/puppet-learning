@@ -7,7 +7,7 @@ notify {'matched client.puppet': }
 }
 
 
-node 'client2.puppet.com' {
+node 'client2.puppet' {
 notify {'matched fqdn': }
 }
 
