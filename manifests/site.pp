@@ -4,7 +4,7 @@ node default {
   notify{'Hi': }
   notify{hiera('message'): }
 
-  include git
+#  include git
 
 #  git::file_create {'create_file': }
 }
