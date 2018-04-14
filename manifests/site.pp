@@ -13,9 +13,9 @@ node 'client2.puppet' {
 notify {'matched fqdn client2.puppet': }
 }
 
-node 'client2.puppet.com' {
-notify {'matched fqdn full': }
-}
+#node 'client2.puppet.com' {
+#notify {'matched fqdn full': }
+#}
 
 node default {
 
