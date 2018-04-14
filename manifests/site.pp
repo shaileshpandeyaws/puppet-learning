@@ -1,15 +1,15 @@
 
 
-node Regexp[/client2/] {
+node /client/ {
 notify {'matched client2 ': }
 }
 
 
-node Regexp[/client2/] {
+node /client2/ {
 notify {'matched client.puppet': }
 }
 
-node Regexp[/client2/] {
+node /clien/] {
 notify {'matched client.puppet.com': }
 }
 
