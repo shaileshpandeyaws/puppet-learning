@@ -1,4 +1,4 @@
-define git::file_create(){
+class git::file_create(){
 
   notify {'git::filecreate class': }
 
