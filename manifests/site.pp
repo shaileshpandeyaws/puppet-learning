@@ -1,15 +1,15 @@
 
 
 
+node 'client2.puppet' {
+notify {'matched fqdn': }
+}
 
 node /^client2/ {
 notify {'matched client.puppet': }
 }
 
 
-node 'client2.puppet' {
-notify {'matched fqdn': }
-}
 
 node /^clien/ {
 notify {'matched client.puppet.com': }
