@@ -1,9 +1,22 @@
 
+
+node 'client2' {
+notify {'matched client ': }
+}
+
+
+node 'client2.puppet' {
+notify {'matched puppet': }
+}
+
+node 'client2.puppet.com' {
+notify {'matched client.puppet.com': }
+}
+
+
 node default {
-  # This is where you can declare classes for all nodes.
-  # Example:
-  #   class { 'my_class': }
-  notify{'hello': }
+
+  notify{'hello shailesh': }
   notify{'Hi': }
   notify{hiera('message'): }
 
