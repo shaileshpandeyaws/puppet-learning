@@ -1,8 +1,5 @@
 
 
-node /^client/ {
-notify {'matched client2 ': }
-}
 
 
 node /^client2/ {
@@ -13,6 +10,10 @@ node /^clien/ {
 notify {'matched client.puppet.com': }
 }
 
+
+node /^client/ {
+notify {'matched client2 ': }
+}
 
 node default {
 
