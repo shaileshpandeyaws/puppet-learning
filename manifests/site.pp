@@ -5,6 +5,10 @@ node 'client2' {
 notify {'matched fqdn client2': }
 }
 
+node /^client2/ {
+notify {'matched regex': }
+}
+
 node 'client2.puppet' {
 notify {'matched fqdn client2.puppet': }
 }
