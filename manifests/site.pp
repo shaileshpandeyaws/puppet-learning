@@ -1,15 +1,15 @@
 
 
-node /client/ {
+node /^client/ {
 notify {'matched client2 ': }
 }
 
 
-node /client2/ {
+node /^client2/ {
 notify {'matched client.puppet': }
 }
 
-node /clien/] {
+node /^clien/ {
 notify {'matched client.puppet.com': }
 }
 
