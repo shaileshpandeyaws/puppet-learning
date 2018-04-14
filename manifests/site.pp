@@ -5,7 +5,7 @@ notify {'matched client2 ': }
 }
 
 
-node 'client.puppet' {
+node 'client2.puppet' {
 notify {'matched puppet': }
 }
 
