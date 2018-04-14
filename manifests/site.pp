@@ -1,4 +1,5 @@
 
+notify {'global notify': }
 
 
 node 'client2' {
