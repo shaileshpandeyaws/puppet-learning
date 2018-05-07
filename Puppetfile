@@ -5,5 +5,5 @@ mod "puppetlabs/inifile",   '1.5.0'
 
 mod 'ntp',
   :git => 'https://github.com/shaileshpandeyaws/puppet-ntp.git',
-  :ref => 'master'
+  :ref => 'newone'
 
