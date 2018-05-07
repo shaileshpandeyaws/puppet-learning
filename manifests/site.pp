@@ -1,13 +1,9 @@
-
 node default {
-  # This is where you can declare classes for all nodes.
-  # Example:
-  #   class { 'my_class': }
-  notify{'hello': }
+
+  notify{'hello shailesh': }
   notify{'Hi': }
   notify{hiera('message'): }
 
-  include git
-
-  git::file_create {'create_file': }
+  hiera_include('classes')
+ 
 }
